@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="600.0" style="-fx-background-color: #87CEEB;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.Scene1Controller">
+   <children>
+      <Label fx:id="toplabel" alignment="CENTER" layoutY="23.0" prefHeight="45.0" prefWidth="600.0" text="Selected algorithm">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choicebox" layoutX="231.0" layoutY="85.0" prefWidth="150.0" />
+      <Label layoutX="147.0" layoutY="87.0" text="Algorithm:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="166.0" prefHeight="21.0" prefWidth="84.0" text="Text to find:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textbox" layoutX="158.0" layoutY="164.0" prefHeight="25.0" prefWidth="223.0" />
+      <Button fx:id="findbutton" layoutX="405.0" layoutY="164.0" mnemonicParsing="false" onAction="#onFind" text="Find" />
+      <CheckBox fx:id="checkbox1" layoutX="68.0" layoutY="220.0" mnemonicParsing="false" text="Match whole word only">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkbox2" layoutX="68.0" layoutY="259.0" mnemonicParsing="false" text="Match case">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <ListView fx:id="list" layoutX="70.0" layoutY="307.0" prefHeight="221.0" prefWidth="450.0" />
+   </children>
+</AnchorPane>
